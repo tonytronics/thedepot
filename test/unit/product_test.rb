@@ -12,6 +12,18 @@ class ProductTest < ActiveSupport::TestCase
     assert product.errors[:image_url].any?
   end
 
+  test "product title must be gt 10" do
+    product = Product.new(title:       "My Book",
+                          description: "yyy",
+                          image_url:   "zzz.jpg")
+
+    assert product.invalid? , "product has too few words in title"
+    assert product.errors[:title].any?
+
+    #assert_equal [I18n.translate('activerecord.errors.messages.taken')], product.errors[:title]
+
+  end
+
 
   test "product price must be positive" do
     product = Product.new(title:       "My Book Title",
