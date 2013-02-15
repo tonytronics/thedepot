@@ -12,6 +12,7 @@ class Product < ActiveRecord::Base
   validates :title, length: { minimum: 10,
                             too_short: "%{count} characters is the minimum allowed" }
 
+
   def shout
     "I am shouting from the products controller"
   end
