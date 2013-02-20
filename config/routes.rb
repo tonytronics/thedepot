@@ -4,7 +4,7 @@ Thedepot::Application.routes.draw do
 
   resources :carts
 
-
+    #set default
   get "store/index"
 
   resources :products
