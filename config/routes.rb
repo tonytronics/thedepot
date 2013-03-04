@@ -1,14 +1,11 @@
 Thedepot::Application.routes.draw do
+
   resources :line_items
-
-
   resources :carts
+  resources :products
 
     #set default
   get "store/index"
-
-  resources :products
-
   root to: 'store#index', as: 'store'
 
   # The priority is based upon order of creation:
