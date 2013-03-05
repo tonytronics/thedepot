@@ -5,6 +5,9 @@
 # courses, books, articles, and the like. Contact us if you are in doubt.
 # We make no guarantees that this code is fit for any purpose. 
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
+#bl
+
+
 #---
 # encoding: utf-8
 Product.delete_all
