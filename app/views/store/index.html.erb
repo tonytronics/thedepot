@@ -8,6 +8,9 @@
 <% if @count >= 5%>
 You have viewed this <%= pluralize(@count, "time") %>
 <% end %>
+
+<B>The store path is <%= store_path %></B>
+
 <% @products.each do |product| %>
     <div class="entry">
       <%= image_tag(product.image_url) %>

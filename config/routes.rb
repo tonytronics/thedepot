@@ -6,7 +6,7 @@ Thedepot::Application.routes.draw do
 
     #set default
   get "store/index"
-  root to: 'store#index', as: 'store'
+  root to: 'store#index' , as: 'store'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
